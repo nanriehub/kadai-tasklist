@@ -1,4 +1,6 @@
 <%= form_with(model: task ) do |f| %>
+  <%= render 'layouts/error_messages', model: f.object %>
+
   <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
 
